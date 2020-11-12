@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="overflow">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/vendor/all.min.css">
+    <link rel="stylesheet" href="./css/vendor/linear.css">
+    <link rel="stylesheet" href="./css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/vendor/bootstrap-rtl.min.css">
+    <link rel="stylesheet" href="./css/vendor/aos.css">
+    <link rel="stylesheet" href="./css/vendor/swiper-bundle.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="shortcut icon" href="./images/favicon.png" />
+    <title>ارتنا</title>
+</head>
+
+<body>
+
+    <div class="pre-loader">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <nav>
+        <div class="nav-bottom">
+            <div class="container">
+                <div class="nav-logo">
+                    <a href="#">
+                        <img src="./images/logo.png" alt="..">
+                    </a>
+                </div>
+                <div class="search">
+                    <div class="search-content">
+                        <form action="#">
+                            <input type="text" placeholder="البحث حسب الفئة ، الموضوع ، العلامة ، ...">
+                            <button class="search-btn"><span class="lnr lnr-magnifier ico"></span></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="nava" id="nava">
+                    <div class="nava-content" id="nava-content" data-trans='translateX(-300%)'>
+                        <div class="nava-head">
+                            <div class="top-setting nava-lang" id="nav-lang">
+                                <span class="setting-anchor"> العربية</span>
+                                <div class="top-dropDown">
+                                    <a href="./index.html" class="drop-link fixall"> العربية</a>
+                                    <a href="./index-en.html" class="drop-link fixall">English</a>
+                                </div>
+                            </div>
+
+                            <div class="nava-close" id="close-nava">
+                                <span class="lnr lnr-cross"></span>
+                            </div>
+                        </div>
+                        <ul>
+                            <li> <a href="#">الرئيسية </a></li>
+                            <li class="top-setting sm-slide slide">
+                                <span class="setting-anchor drop"> لوحات <span
+                                        class="lnr lnr-chevron-down"></span></span>
+                                <div class="top-dropDown">
+                                    <div class="c2">
+                                        <div class="cat nava-list">
+                                            <ul>
+                                                <li><a href="#">طلاء زيتي</a></li>
+                                                <li><a href="#">يرسم لوحه</a></li>
+                                                <li><a href="#">مزيج الطلاء</a></li>
+                                                <li class="shop"><a href="#">تسوق كل اللوحات</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="price nava-list" data-target="#collapse1" aria-expanded="false"
+                                            aria-controls="collapse1">
+                                            <div class="head">
+                                                <h4>السعر </h4><span class="lnr lnr-chevron-down"></span>
+                                            </div>
+                                            <ul id="collapse1">
+                                                <li><a href="#">10،000 ريال وما فوق</a></li>
+                                                <li><a href="#">5،000 ريال - 10،000 ريال سعودي</a></li>
+                                                <li><a href="#">2،000 ريال - 5،000 ريال سعودي</a></li>
+                                                <li><a href="#">أقل من 2،000 ريال سعودي</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="medium nava-list" data-target="#collapse2" aria-expanded="false"
+                                            aria-controls="collapse2">
+                                            <div class="head">
+                                                <h4>وسيط فني</h4><span class="lnr lnr-chevron-down"></span>
+                                            </div>
+                                            <ul id="collapse2">
+                                                <li><a href="#">لوحات</a></li>
+                                                <li><a href="#">مطبوعات</a></li>
+                                                <li><a href="#">التصوير</a></li>
+                                                <li><a href="#">النحت</a></li>
+                                                <li><a href="#">رسم</a></li>
+                                                <li><a href="#">وسائل اعلام مختلطة</a></li>
+                                                <li><a href="#">التصميم</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="style nava-list" data-target="#collapse3" aria-expanded="false"
+                                            aria-controls="collapse3">
+                                            <div class="head">
+                                                <h4>اسلوب فني </h4><span class="lnr lnr-chevron-down"></span>
+                                            </div>
+                                            <ul id="collapse3">
+                                                <li><a href="#">معاصر</a></li>
+                                                <li><a href="#">فن الشارع</a></li>
+                                                <li><a href="#">فن البوب</a></li>
+                                                <li><a href="#">التعبيرية المجردة</a></li>
+                                                <li><a href="#">ما بعد الحرب</a></li>
+                                                <li><a href="#">الانطباعية والحداثة</a></li>
+                                                <li><a href="#">سادة القدامى</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li> <a href="#">مطبوعات </a></li>
+                            <li> <a href="#">أخرى </a></li>
+                            <li> <a href="#">عروض خاصة</a></li>
+                            <li> <a href="#">وصل حديثًا</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="nav-icons">
+                    <div class="menu" id="nava-icon">
+                        <span class="lnr lnr-menu ico"></span>
+                    </div>
+                    <div class="search-btn" id="search-btn">
+                        <span class="lnr lnr-magnifier ico"></span>
+                    </div>
+                    <div class="top-setting user" id="user">
+                        <span class="setting-anchor"> <span class="lnr lnr-user"></span></span>
+                        <div class="top-dropDown">
+                            <a href="#" class="drop-link fixall"> تسجيل الدخول</a>
+                            <a href="#" class="drop-link fixall">تسجيل جديد</a>
+                        </div>
+                    </div>
+                    <div class="favourite" id="favourite">
+                        <span class="lnr lnr-heart ico"></span>
+                    </div>
+                    <div class="cart" id="cart-btn">
+                        <span class="lnr lnr-cart ico"></span>
+                    </div>
+                    <div class="top-setting nav-lang" id="nav-lang">
+                        <span class="setting-anchor"> العربية</span>
+                        <div class="top-dropDown">
+                            <a href="./index.html" class="drop-link fixall"> العربية</a>
+                            <a href="./index-en.html" class="drop-link fixall">English</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="search-form" id="search-form">
+        <div class="close-search" id="close-search"><span class="lnr lnr-cross"></span></div>
+        <div class="search">
+            <form action="#">
+                <input type="text" id="search-input" placeholder="البحث حسب الفئة ، الموضوع ، العلامة ، ..."
+                    autocomplete="false">
+                <button class="searching"><span class="lnr lnr-magnifier"></span></button></form>
+        </div>
+    </div>
+
+    <header>
+        <div class="container">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="./images/header/header.jpg" alt="..">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="./images/header/header.jpg" alt="..">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="./images/header/header.jpg" alt="..">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="./images/header/header.jpg" alt="..">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="./images/header/header.jpg" alt="..">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="./images/header/header.jpg" alt="..">
+                        </a>
+                    </div>
+
+
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+
+            </div>
+        </div>
+    </header>
+
+    <div id="banners">
+        <div class="container">
+            <div class="c2">
+                <div class="banners-head s-head" data-aos="fade-right">
+                    <p>
+                        اكتشف الفن                    </p>
+                    <h3>
+                        فئات مميزة                    </h3>
+                </div>
+                <div class="banners-content">
+                    <div class="banner" data-aos="fade-up" data-aos-delay="0">
+                        <a href="#">
+                            <img src="./images/banners/1.jpg" alt="..">
+                            <p>زيت</p>
+                        </a>
+                    </div>
+                    <div class="banner" data-aos="fade-down" data-aos-delay="600">
+                        <a href="#">
+                            <img src="./images/banners/2.jpg" alt="..">
+                            <p>رسم</p>
+                        </a>
+                    </div>
+                    <div class="banner" data-aos="fade-up" data-aos-delay="300">
+                        <a href="#">
+                            <img src="./images/banners/3.jpg" alt="..">
+                            <p>التصميم الجرافيكي</p>
+                        </a>
+                    </div>
+                    <div class="banner" data-aos="fade-up" data-aos-delay="300">
+                        <a href="#">
+                            <img src="./images/banners/4.jpg" alt="..">
+                            <p>تصوير</p>
+                        </a>
+                    </div>
+                    <div class="banner" data-aos="fade-up" data-aos-delay="600">
+                        <a href="#">
+                            <img src="./images/banners/5.jpg" alt="..">
+                            <p>نحت</p>
+                        </a>
+                    </div>
+                    <div class="banner" data-aos="fade-up" data-aos-delay="0">
+                        <a href="#">
+                            <img src="./images/banners/6.jpg" alt="..">
+                            <p>وسائل اعلام مختلطة</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="new-arrivals">
+        <div class="container">
+            <div class="c2">
+                <div class="new-arrivals-head s-head" data-aos="fade-left">
+                    <p>
+                        اكتشف ارتنا
+                    </p>
+                    <h3>
+                        وصل حديثا
+                    </h3>
+                    <div class="more"><a class="flex-center" href="#">تسوق أكثر</a></div>
+                </div>
+                <div class="new-arrivals-body row" data-aos="zoom-in">
+                    <div class="new-arrivals-swiper-container s-container">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide product">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./images/products/1.jpg" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h5> <a href="#">اسم منتج تجريبى</a></h5>
+                                    <div class="price flex-center">
+                                        <div class="now"> <span>200</span> <span>ريال</span></div>
+                                        <div class="price-sale"><span>260</span> <span>ريال</span> </div>
+                                    </div>
+
+                                    <div class="icons">
+                                        <div class="favourite" id="favourite">
+                                            <span class="lnr lnr-heart ico"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide product">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./images/products/2.jpg" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h5> <a href="#">اسم منتج تجريبى</a></h5>
+                                    <div class="price flex-center">
+                                        <div class="now"> <span>200</span> <span>ريال</span></div>
+                                        <div class="price-sale"><span>260</span> <span>ريال</span> </div>
+                                    </div>
+
+                                    <div class="icons">
+                                        <div class="favourite" id="favourite">
+                                            <span class="lnr lnr-heart ico"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide product">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./images/products/3.jpg" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h5> <a href="#">اسم منتج تجريبى</a></h5>
+                                    <div class="price flex-center">
+                                        <div class="now"> <span>200</span> <span>ريال</span></div>
+                                        <div class="price-sale"><span>260</span> <span>ريال</span> </div>
+                                    </div>
+
+                                    <div class="icons">
+                                        <div class="favourite" id="favourite">
+                                            <span class="lnr lnr-heart ico"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                    </div>
+                </div>
+                <div class="more2"><a class="flex-center" href="#">تسوق أكثر</a></div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="best-seller">
+        <div class="container">
+            <div class="c2">
+                <div class="best-seller-head s-head" data-aos="fade-left">
+                    <p>
+                        اكتشف ارتنا
+                    </p>
+                    <h3>
+                        الاكثر مبيعا
+                    </h3>
+                </div>
+                <div class="best-seller-body row" data-aos="zoom-in">
+                    <div class="best-seller-swiper-container s-container">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide product">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./images/products/4.jpg" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h5> <a href="#">اسم منتج تجريبى</a></h5>
+                                    <div class="price flex-center">
+                                        <div class="now"> <span>200</span> <span>ريال</span></div>
+                                        <div class="price-sale"><span>260</span> <span>ريال</span> </div>
+                                    </div>
+
+                                    <div class="icons">
+                                        <div class="favourite" id="favourite">
+                                            <span class="lnr lnr-heart ico"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide product">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./images/products/5.jpg" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h5> <a href="#">اسم منتج تجريبى</a></h5>
+                                    <div class="price flex-center">
+                                        <div class="now"> <span>200</span> <span>ريال</span></div>
+                                        <div class="price-sale"><span>260</span> <span>ريال</span> </div>
+                                    </div>
+
+                                    <div class="icons">
+                                        <div class="favourite" id="favourite">
+                                            <span class="lnr lnr-heart ico"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide product">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./images/products/6.jpg" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h5> <a href="#">اسم منتج تجريبى</a></h5>
+                                    <div class="price flex-center">
+                                        <div class="now"> <span>200</span> <span>ريال</span></div>
+                                        <div class="price-sale"><span>260</span> <span>ريال</span> </div>
+                                    </div>
+
+                                    <div class="icons">
+                                        <div class="favourite" id="favourite">
+                                            <span class="lnr lnr-heart ico"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                    </div>
+                </div>
+                <div class="more2"><a class="flex-center" href="#">تسوق أكثر</a></div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <div id="banner2">
+        <div class="container">
+            <div class="banner-content" data-aos="flip-up">
+                <div class="banner">
+                    <a href="#">
+                        <img src="./images/banners/banner.jpg" alt="..">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="specials">
+        <div class="container">
+            <div class="c2">
+                <div class="specials-head s-head" data-aos="fade-left">
+                    <p>
+                        اكتشف ارتنا
+                    </p>
+                    <h3>
+                        عروض خاصة
+                    </h3>
+                    <div class="more"><a class="flex-center" href="#">تسوق أكثر</a></div>
+                </div>
+                <div class="specials-body row" data-aos="zoom-in">
+                    <div class="specials-swiper-container s-container">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide product">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./images/products/7.jpg" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h5> <a href="#">اسم منتج تجريبى</a></h5>
+                                    <div class="price flex-center">
+                                        <div class="now"> <span>200</span> <span>ريال</span></div>
+                                        <div class="price-sale"><span>260</span> <span>ريال</span> </div>
+                                    </div>
+
+                                    <div class="icons">
+                                        <div class="favourite" id="favourite">
+                                            <span class="lnr lnr-heart ico"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide product">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./images/products/8.jpg" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h5> <a href="#">اسم منتج تجريبى</a></h5>
+                                    <div class="price flex-center">
+                                        <div class="now"> <span>200</span> <span>ريال</span></div>
+                                        <div class="price-sale"><span>260</span> <span>ريال</span> </div>
+                                    </div>
+
+                                    <div class="icons">
+                                        <div class="favourite" id="favourite">
+                                            <span class="lnr lnr-heart ico"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide product">
+                                <div class="product-img">
+                                    <a href="#">
+                                        <img src="./images/products/9.jpg" alt="product">
+                                    </a>
+                                </div>
+                                <div class="product-disc">
+                                    <h5> <a href="#">اسم منتج تجريبى</a></h5>
+                                    <div class="price flex-center">
+                                        <div class="now"> <span>200</span> <span>ريال</span></div>
+                                        <div class="price-sale"><span>260</span> <span>ريال</span> </div>
+                                    </div>
+
+                                    <div class="icons">
+                                        <div class="favourite" id="favourite">
+                                            <span class="lnr lnr-heart ico"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                    </div>
+                </div>
+                <div class="more2"><a class="flex-center" href="#">تسوق أكثر</a></div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <div id="join">
+        <div class="container">
+            <div class="c2">
+                <div class="join-head">
+                    <p>انضم إلى مجتمع ارتنا</p>
+                    <h3>الاشتراك في القائمة البريدية</h3>
+                </div>
+                <div class="join-body">
+                    <form>
+                        <input type="text" placeholder="أدخل عنوان بريدك الالكتروني">
+                        <div class="sub">الإشتراك</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="notes">
+        <div class="container">
+            <div class="c2">
+                <div class="notes-content" data-aos="zoom-out">
+                    <div class="notes-swiper-container">
+
+                        <div class="swiper-wrapper">
+
+                            <div class="note swiper-slide">
+                                <div class="note-icon"><img src="./images/footer/1.png" alt="icon"></div>
+                                <div class="note-body">
+                                    <h3>ضمان استعادة الاموال
+                                        في غضون 10 أيام
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="note swiper-slide">
+                                <div class="note-icon"><img src="./images/footer/2.png" alt="icon"></div>
+                                <div class="note-body">
+                                    <h3>طرق دفع متنوعه وآمنه
+                                        
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="note swiper-slide">
+                                <div class="note-icon"><img src="./images/footer/3.png" alt="icon"></div>
+                                <div class="note-body">
+                                    <h3>التعبئة والتغليف والتسليم الآمن
+                                        دوليا
+                                    </h3>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="c2">
+                <div class="footer-top">
+                    <div class="mail" data-aos="fade-right" data-aos-delay="0">
+                        <p>تابعنا</p>
+                        <h4>عيش ارتنا</h4>
+                        <div class="social flex-center">
+                            <div class="social-icon facebook">
+                                <a class="flex-center" href="#"> <i class="fab fa-facebook-f"></i></a>
+                            </div>
+                            <div class="social-icon twitter">
+                                <a class="flex-center" href="#"> <i class="fab fa-twitter"></i></a>
+                            </div>
+                            <div class="social-icon twitter">
+                                <a class="flex-center" href="#"> <i class="fab fa-instagram"></i></a>
+                            </div>
+                            <div class="social-icon twitter">
+                                <a class="flex-center" href="#"> <i class="fab fa-snapchat-ghost"></i></a>
+                            </div>
+                            <div class="social-icon twitter">
+                                <a class="flex-center" href="#"> <i class="fab fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info footer-list" data-aos="fade-left" data-aos-delay="200" data-target="#collapse1"
+                        aria-expanded="false" aria-controls="collapse1">
+                        <div class="head">
+                            <h4>معلومات <span class="lnr lnr-chevron-down"></span></h4>
+                        </div>
+                        <ul id="collapse1">
+                            <li><a href="#">معلومات عنا</a></li>
+                            <li><a href="#">معلومات التوصيل</a></li>
+                            <li><a href="#">سياسة الخصوصية</a></li>
+                            <li><a href="#">البنود و الظروف</a></li>
+                        </ul>
+                    </div>
+                    <div class="cust footer-list" data-aos="fade-left" data-aos-delay="400" data-target="#collapse2"
+                        aria-expanded="false" aria-controls="collapse2">
+                        <div class="head">
+                            <h4>خدمة العملاء <span class="lnr lnr-chevron-down"></span></h4>
+                        </div>
+                        <ul id="collapse2">
+                            <li><a href="#">اتصل بنا</a></li>
+                            <li><a href="#">المرتجعات</a></li>
+                            <li><a href="#">خريطة الموقع</a></li>
+                        </ul>
+                    </div>
+                    <div class="extras footer-list" data-aos="fade-right" data-aos-delay="600" data-target="#collapse3"
+                        aria-expanded="false" aria-controls="collapse3">
+                        <div class="head">
+                            <h4>اضافات <span class="lnr lnr-chevron-down"></span></h4>
+                        </div>
+                        <ul id="collapse3">
+                            <li><a href="#">العلامات التجارية</a></li>
+                            <li><a href="#">بطاقات الهدايا</a></li>
+                            <li><a href="#">شركات تابعة</a></li>
+                            <li><a href="#">العروض الخاصة</a></li>
+                        </ul>
+                    </div>
+                    <div class="account footer-list" data-aos="fade-right" data-aos-delay="800" data-target="#collapse4"
+                        aria-expanded="false" aria-controls="collapse4">
+                        <div class="head">
+                            <h4>حسابى <span class="lnr lnr-chevron-down"></span></h4>
+                        </div>
+                        <ul id="collapse4">
+                            <li><a href="#">حسابى</a></li>
+                            <li><a href="#">سجل الطلبات</a></li>
+                            <li><a href="#">قائمة الرغبات</a></li>
+                            <li><a href="#">القائمة البريدية</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="credit">
+                    <p> حقوق النشر &copy; ارتنا 2020 </p>
+                    <p>تصميم وتطوير <i class="fas fa-heart"></i>
+                        <a href="https://tasawk.com.sa/"> <img src="./images/icons/footer.png" alt=""></a></p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <div id="up" class="up flex-center" onclick="window.scroll({top: 0,behavior: 'smooth'});">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+
+
+
+
+    <script src="./js/vendor/jquery.min.js"></script>
+    <script src="./js/vendor/bootstrap.min.js"></script>
+    <script src="./js/vendor/swiper-bundle.js"></script>
+    <script src="./js/vendor/aos.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

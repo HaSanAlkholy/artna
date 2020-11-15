@@ -58,7 +58,6 @@ $(window).on('load', function () {
   $(".slide").on("click", function (e) {
     if (e.target.classList.contains('drop') && e.target.parentNode.classList.contains('slide') ||e.target.classList.contains('slide')) {
       $(this).toggleClass("slide-active");
-      console.log(this);
       $(this).children(".top-dropDown").slideToggle();
     }
   });
@@ -179,7 +178,6 @@ $(window).on('load', function () {
   }
 
   function addCollapse() {
-    console.log('resize');
     if (window.innerWidth <= 1200) {
       $('.nava-list').attr("data-toggle", "collapse");
       $('.nava-list ul').addClass('collapse');

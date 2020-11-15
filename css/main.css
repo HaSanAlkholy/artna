@@ -329,8 +329,20 @@ ul {
   right: -55px;
 }
 
+@media (max-width: 1400px) {
+  .s-container .swiper-button-prev {
+    right: -40px;
+  }
+}
+
 .s-container .swiper-button-next {
   left: -55px;
+}
+
+@media (max-width: 1400px) {
+  .s-container .swiper-button-next {
+    left: -40px;
+  }
 }
 
 .s-container .swiper-pagination {

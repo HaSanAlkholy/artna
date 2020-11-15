@@ -74,10 +74,18 @@
 
     .swiper-button-prev {
         right: -55px;
+
+        @media(max-width:1400px){
+            right:-40px;
+        }
     }
 
     .swiper-button-next {
         left: -55px;
+
+        @media(max-width:1400px){
+            left:-40px;
+        }
     }
 
     .swiper-pagination {

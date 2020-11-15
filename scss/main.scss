@@ -111,7 +111,7 @@
     h3 {
         font-size: 36px;
         margin-bottom: 50px;
-        font-family: RobotoBold;
+        font-family: TajawalBold;
 
         @media (max-width: 576px) {
             margin-bottom: 20px;
@@ -204,7 +204,7 @@
             .now {
                 font-size: 16px;
                 font-weight: 700;
-                font-family: RobotoBold;
+                font-family: TajawalBold;
             }
 
             .price-sale {
@@ -214,7 +214,6 @@
                 font-size: 16px;
                 font-weight: 400;
                 display: flex;
-                font-family: RobotoRegular;
             }
 
             span {
@@ -550,7 +549,7 @@ nav {
                             .head {
                                 h4 {
                                     font-size: 15px;
-                                    font-family: RobotoBold;
+                                    font-family: TajawalBold;
                                     margin-bottom: 30px;
                                 }
                                 span {
@@ -577,6 +576,10 @@ nav {
                                 margin-top: 80px;
                                 color: rgba(142, 142, 142, 255);
                                 text-decoration: underline;
+                            }
+
+                            .head{
+                                display: none;
                             }
                         }
                     }
@@ -741,6 +744,12 @@ nav {
                         li {
                             margin: 0;
                         }
+                    }
+                }
+
+                .cat{
+                    .head{
+                        display: flex;
                     }
                 }
 
@@ -1068,7 +1077,7 @@ header {
     .banners-head {
         text-align: center;
         h3 {
-            font-family: RobotoLight;
+            font-family: TajawalLight;
             margin-bottom: 30px;
         }
     }
@@ -1515,12 +1524,12 @@ header {
     .join-head {
         p {
             font-size: 24px;
-            font-family: RobotoLight;
+            font-family: TajawalLight;
             margin-bottom: 10px;
         }
         h3 {
             font-size: 60px;
-            font-family: RobotoLight;
+            font-family: TajawalLight;
         }
 
         @media (max-width: 1400px) {
@@ -1762,7 +1771,7 @@ footer {
                 font-weight: 700;
                 font-size: 16px;
                 transition: all 0.5s;
-                font-family: RobotoBold;
+                font-family: TajawalBold;
                 span {
                     font-size: 14px;
                     transition: all 0.5s;
@@ -1782,7 +1791,6 @@ footer {
                 font-size: 14px;
                 transition: all 0.3s;
                 text-transform: capitalize;
-                font-family: RobotoRegular;
             }
             &:hover {
                 transform: translateX(-5px);
@@ -1791,35 +1799,6 @@ footer {
                 }
             }
         }
-
-        // .footer-list {
-        //     transition: all 0.5s;
-
-        //     @media (max-width: 992px) {
-        //         width: 100%;
-        //         .head {
-        //             h4 {
-        //                 display: flex;
-        //                 justify-content: space-between;
-        //                 align-items: center;
-        //             }
-        //         }
-        //         ul {
-        //             text-align: start;
-        //         }
-        //     }
-        // }
-
-        // .footer-list-active {
-        //     margin-bottom: 20px;
-        //     .head {
-        //         h4 {
-        //             span {
-        //                 transform: rotate(180deg);
-        //             }
-        //         }
-        //     }
-        // }
 
         .footer-list {
             @media (max-width: 992px) {
@@ -1831,7 +1810,7 @@ footer {
             h4 {
                 margin-bottom: 25px;
                 font-size: 36px;
-                font-family: RobotoLight;
+                font-family: TajawalLight;
                 text-transform: uppercase;
             }
             p {
@@ -1907,6 +1886,11 @@ footer {
 }
 
 html[dir="ltr"] {
+
+    body,html{
+        font-family: "RobotoRegular", sans-serif;
+    }
+
     .s-container {
         .swiper-button-prev {
             right: unset;
@@ -1922,6 +1906,22 @@ html[dir="ltr"] {
             @media (max-width: 1400px) {
                 left: unset;
                 right: -35px;
+            }
+        }
+    }
+
+    .s-head{
+        p{
+            font-family: RobotoBold;
+        }
+    }
+
+    .product{
+        .product-disc{
+            .price{
+                .now{
+                    font-family: RobotoBold;
+                }
             }
         }
     }
@@ -1947,6 +1947,18 @@ html[dir="ltr"] {
 
         .nava {
             .nava-content {
+                .top-setting{
+                    .top-dropDown{
+                        .nava-list{
+                            .head{
+                                .h4{
+                                    font-family: RobotoBold;
+                                }
+                            }
+                        }
+                    }
+                }
+
                 @media (max-width: 1200px) {
                     right: unset;
                     left: -150%;
@@ -1995,7 +2007,20 @@ html[dir="ltr"] {
         }
     }
 
+    #banners{
+        .banners-head{
+            h3{
+                font-family: RobotoLight;
+            }
+        }
+    }
+
     #join {
+        .join-head{
+            p,h3{
+                font-family: RobotoLight;
+            }
+        }
         .join-body {
             .sub {
                 left: unset;
@@ -2011,12 +2036,22 @@ html[dir="ltr"] {
 
     footer {
         .footer-top {
+            .head{
+                h4{
+                    font-family: RobotoBold;
+                }
+            }
             li {
                 &:hover {
                     transform: translateX(5px);
                 }
             }
             .mail {
+
+                h4{
+                    font-family: RobotoLight;
+                }
+
                 .form-group {
                     a {
                         left: unset;

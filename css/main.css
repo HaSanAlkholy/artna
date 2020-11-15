@@ -63,12 +63,52 @@ h6 {
   font-display: swap;
 }
 
+@font-face {
+  font-family: "TajawalLight";
+  src: url("../fonts/Tajawal-Light.woff2") format("woff2"), url("../fonts/Tajawal-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TajawalRegular";
+  src: url("../fonts/Tajawal-Regular.woff2") format("woff2"), url("../fonts/Tajawal-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TajawalMedium";
+  src: url("../fonts/Tajawal-Medium.woff2") format("woff2"), url("../fonts/Tajawal-Medium.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TajawalBold";
+  src: url("../fonts/Tajawal-Bold.woff2") format("woff2"), url("../fonts/Tajawal-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TajawalExtraBold";
+  src: url("../fonts/Tajawal-ExtraBold.woff2") format("woff2"), url("../fonts/Tajawal-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
 body,
 html {
   scroll-behavior: smooth;
   width: 100%;
   background-color: white;
-  font-family: "RobotoRegular", sans-serif;
+  font-family: "TajawalMedium", sans-serif;
   color: black;
   overflow-x: hidden;
   line-height: 1.2;
@@ -328,7 +368,7 @@ ul {
 .s-head h3 {
   font-size: 36px;
   margin-bottom: 50px;
-  font-family: RobotoBold;
+  font-family: TajawalBold;
 }
 
 @media (max-width: 576px) {
@@ -424,7 +464,7 @@ ul {
 .product .product-disc .price .now {
   font-size: 16px;
   font-weight: 700;
-  font-family: RobotoBold;
+  font-family: TajawalBold;
 }
 
 .product .product-disc .price .price-sale {
@@ -434,7 +474,6 @@ ul {
   font-size: 16px;
   font-weight: 400;
   display: flex;
-  font-family: RobotoRegular;
 }
 
 .product .product-disc .price span {
@@ -794,7 +833,7 @@ nav .nava .nava-content > ul .top-setting .top-dropDown .nava-list {
 
 nav .nava .nava-content > ul .top-setting .top-dropDown .nava-list .head h4 {
   font-size: 15px;
-  font-family: RobotoBold;
+  font-family: TajawalBold;
   margin-bottom: 30px;
 }
 
@@ -824,6 +863,10 @@ nav .nava .nava-content > ul .top-setting .top-dropDown .cat .shop {
   margin-top: 80px;
   color: #8e8e8e;
   text-decoration: underline;
+}
+
+nav .nava .nava-content > ul .top-setting .top-dropDown .cat .head {
+  display: none;
 }
 
 nav .nava .nava-content > ul .slide .drop {
@@ -965,6 +1008,9 @@ nav .nava .nava-content .nava-head {
   }
   nav .nava .nava-content .nava-list ul li {
     margin: 0;
+  }
+  nav .nava .nava-content .cat .head {
+    display: flex;
   }
   nav .nava .nava-content .nava-list-active {
     margin-bottom: 20px;
@@ -1293,7 +1339,7 @@ header .swiper-container .swiper-slide img {
 }
 
 #banners .banners-head h3 {
-  font-family: RobotoLight;
+  font-family: TajawalLight;
   margin-bottom: 30px;
 }
 
@@ -1793,13 +1839,13 @@ header .swiper-container .swiper-slide img {
 
 #join .join-head p {
   font-size: 24px;
-  font-family: RobotoLight;
+  font-family: TajawalLight;
   margin-bottom: 10px;
 }
 
 #join .join-head h3 {
   font-size: 60px;
-  font-family: RobotoLight;
+  font-family: TajawalLight;
 }
 
 @media (max-width: 1400px) {
@@ -2067,7 +2113,7 @@ footer .footer-top .head h4 {
   font-weight: 700;
   font-size: 16px;
   transition: all 0.5s;
-  font-family: RobotoBold;
+  font-family: TajawalBold;
 }
 
 footer .footer-top .head h4 span {
@@ -2091,7 +2137,6 @@ footer .footer-top li a {
   font-size: 14px;
   transition: all 0.3s;
   text-transform: capitalize;
-  font-family: RobotoRegular;
 }
 
 footer .footer-top li:hover {
@@ -2111,7 +2156,7 @@ footer .footer-top li:hover a {
 footer .footer-top .mail h4 {
   margin-bottom: 25px;
   font-size: 36px;
-  font-family: RobotoLight;
+  font-family: TajawalLight;
   text-transform: uppercase;
 }
 
@@ -2190,6 +2235,10 @@ footer .credit .fa-heart {
   }
 }
 
+html[dir="ltr"] body, html[dir="ltr"] html {
+  font-family: "RobotoRegular", sans-serif;
+}
+
 html[dir="ltr"] .s-container .swiper-button-prev {
   right: unset;
   left: -55px;
@@ -2214,6 +2263,14 @@ html[dir="ltr"] .s-container .swiper-button-next {
   }
 }
 
+html[dir="ltr"] .s-head p {
+  font-family: RobotoBold;
+}
+
+html[dir="ltr"] .product .product-disc .price .now {
+  font-family: RobotoBold;
+}
+
 html[dir="ltr"] nav .nav-bottom .nava-active .nava-content {
   right: unset;
   left: 0;
@@ -2222,6 +2279,10 @@ html[dir="ltr"] nav .nav-bottom .nava-active .nava-content {
 html[dir="ltr"] nav .nav-bottom .search .search-content .search-btn {
   left: unset;
   right: 7px;
+}
+
+html[dir="ltr"] nav .nava .nava-content .top-setting .top-dropDown .nava-list .head .h4 {
+  font-family: RobotoBold;
 }
 
 @media (max-width: 1200px) {
@@ -2262,6 +2323,14 @@ html[dir="ltr"] header .swiper-container .swiper-button-next {
   right: 35px;
 }
 
+html[dir="ltr"] #banners .banners-head h3 {
+  font-family: RobotoLight;
+}
+
+html[dir="ltr"] #join .join-head p, html[dir="ltr"] #join .join-head h3 {
+  font-family: RobotoLight;
+}
+
 html[dir="ltr"] #join .join-body .sub {
   left: unset;
   right: -57px;
@@ -2274,8 +2343,16 @@ html[dir="ltr"] #join .join-body .sub {
   }
 }
 
+html[dir="ltr"] footer .footer-top .head h4 {
+  font-family: RobotoBold;
+}
+
 html[dir="ltr"] footer .footer-top li:hover {
   transform: translateX(5px);
+}
+
+html[dir="ltr"] footer .footer-top .mail h4 {
+  font-family: RobotoLight;
 }
 
 html[dir="ltr"] footer .footer-top .mail .form-group a {

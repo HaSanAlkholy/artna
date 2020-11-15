@@ -544,7 +544,7 @@ nav .container::before, nav .container::after {
 
 @media (min-width: 1200px) {
   nav .container {
-    width: 1730px;
+    width: 1920px;
   }
 }
 
@@ -1231,12 +1231,6 @@ header .container {
   }
 }
 
-@media (min-width: 1200px) {
-  header .container {
-    width: 1730px;
-  }
-}
-
 header .row {
   margin: 0;
 }
@@ -1625,12 +1619,6 @@ header .swiper-container .swiper-slide img {
 @media (min-width: 992px) {
   #banner2 .container {
     width: 100%;
-  }
-}
-
-@media (min-width: 1200px) {
-  #banner2 .container {
-    width: 1730px;
   }
 }
 
